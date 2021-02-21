@@ -1,0 +1,38 @@
+:root {
+  --rubineRed: #cf1259;
+  --cyclamen: #DD7596;
+  --lavenderBlue: #B7C3F3;
+  --blackCoral: #4F6272;
+  --charcoal: #404E5C;
+  --tyrian-purple: #5f0f40ff;
+  --ruby-red: #9a031eff;
+  --dark-orange: #fb8b24ff;
+  --spanish-orange: #e36414ff;
+  --midnight-green-eagle-green: #0f4c5cff;
+  --russian-violet: #330036ff;
+  --dark-purple: #38182fff;
+  --charcoal2: #2f394dff;
+  --cadet: #56666bff;
+  --lemon-meringue: #eee1b3ff;
+  --alice-blue: #e7ecefff;
+  --yale-blue: #274c77ff;
+  --cerulean-frost: #6096baff;
+  --baby-blue-eyes: #a3cef1ff;
+  --battleship-grey: #8b8c89ff;
+}
+
+.svg {
+  border: 1px solid black;
+}
+
+.ex1 {
+  x: 5px;
+  y: 300px;
+  width: 200px;
+  height: 100px;
+  fill: var(--yale-blue);
+  stroke: var(--cadet);
+  stroke-width: 6px;
+  stroke-linejoin: bevel;
+}
+/*# sourceMappingURL=index.css.map */

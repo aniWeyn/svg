@@ -1,0 +1,14 @@
+.svg{
+    border: 1px solid black;
+}
+
+.ex1{
+    x: 5px;
+    y: 300px; 
+    width: 200px;
+    height: 100px;
+    fill: var(--yale-blue);
+    stroke: var(--cadet);
+    stroke-width: 6px;
+    stroke-linejoin: bevel;
+}
