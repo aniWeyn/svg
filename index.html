@@ -1,53 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Introduction to SVG</title>
-  <meta name="description" content="SVG">
-  <meta name="author" content="Sabina Niewiadomska">
+    <title>Introduction to SVG</title>
+    <meta name="description" content="SVG" />
+    <meta name="author" content="Sabina Niewiadomska" />
 
-  <link rel="stylesheet" href="assets/styles/index.css">
-</head>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
 
-
-<body>
-   <section>
-    <svg>
+  <body>
+    <h2>Basic of SVGs examples</h2>
+    <p>Below examples are meant to help you understand SVGs attributes. Open this project in your code editor or inspect the page in the browser. Uncomment lines to see different examples.</p>
+    <section>
+      <hr />
+      <h3>Simple example</h3>
+      <svg>
         <rect width="200" height="100" fill="var(--rubineRed)" />
-    </svg>
-   </section>
+      </svg>
+    </section>
 
-   <section>
-    <svg class="svg" width="600" height="400">
+    <section>
+      <hr />
+      <h3>Examples of fills and strokes</h3>
+
+      <svg class="svg" width="600" height="400">
         <!-- By default the figures are black -->
         <rect x="0" y="0" width="200" height="100" />
 
-        
         <!--<rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/> -->
 
         <!-- radious -->
         <!--<circle cx="50" cy="100" r="40" fill="var(--lavenderBlue)" />-->
-        
+
         <!--<ellipse cx="350" cy="60" rx="100" ry="50" fill="var(--tyrian-purple)" />-->
 
-         
         <!--<rect x="50" y="180" width="100" height="50" fill="var(--cerulean-frost)" 
         stroke="var(--blackCoral)" stroke-width="6"/>-->
 
-       
         <!--stroke-linejoin= round / miter (default) / bevel -->
-       <!--<rect x="50" y="280" width="200" height="100" fill="var(--lemon-meringue)" 
+        <!--<rect x="50" y="280" width="200" height="100" fill="var(--lemon-meringue)" 
         stroke="var(--cadet)" stroke-width="6" stroke-linejoin="bevel" /> -->
 
         <!-- <rect class="ex1" />-->
-    </svg>
-   </section>
+      </svg>
+    </section>
 
-   <section>
-    <svg class="svg" width="600" height="400">
-       <!-- <line x1="10" y1="20px" x2="300" y2="400" stroke="var(--yale-blue)" stroke-width="5px"  />-->
+    <section>
+      <hr />
+      <h3>Example of lines, polylines and polygons</h3>
+      <svg class="svg" width="600" height="400">
+        <line
+          x1="10"
+          y1="20px"
+          x2="300"
+          y2="400"
+          stroke="var(--yale-blue)"
+          stroke-width="5px"
+        />
 
         <!-- stroke-linecap= round / square / butt  -->
         <!--<line x1="100" y1="20px" x2="400" y2="300" stroke="var(--cerulean-frost)" stroke-width="5px" stroke-linecap="round" />-->
@@ -55,66 +67,126 @@
         <!-- try without "transparent"-->
         <!-- <polyline points="0,40 40,40 40,80 80,80 80,120" fill="transparent" stroke="var(--baby-blue-eyes)" stroke-width="5px"/>-->
 
-         <!--<polygon points="150,55 200,55 225,80 225,130 200,155 150,155 125,130 125,80" fill="var(--baby-blue-eyes)"/> -->
-    </svg>
-   </section>
-   <section>
-    <svg class="svg" width="600" height="400">
-       <!-- x, y, width, height,  -->
-        <!--<path d="M10 10 H 90 V 90 H 10 Z"  fill="var(--yale-blue)"/> -->
+        <!--<polygon points="150,55 200,55 225,80 225,130 200,155 150,155 125,130 125,80" fill="var(--baby-blue-eyes)"/> -->
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>Path examples</h3>
+      <svg class="svg" width="600" height="400">
+        <!-- x, y, width, height,  -->
+        <path d="M10 10 H 90 V 90 H 10 Z" fill="var(--yale-blue)" />
 
         <!--<path d="M100 100 L 200 100" stroke="var(--rubineRed)" stroke-width="5px"  />-->
 
         <!--<path d="M0,200 Q250,10 500,200" fill="none" stroke="var(--battleship-grey)" stroke-width="5px"/>-->
-    </svg>
-   </section>
+      </svg>
+      <p>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d#path_commands" target="_blank">Developer Mozilla - Path Commands</a>
+      </p>
+    </section>
 
-   <section>
-    <svg class="svg" width="400" height="200" >
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-      <!-- what will happen if element will be longer than the canvas?-->
-     <svg class="svg" width="200" height="200" >
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-      <!-- example of view box -->
-     <svg class="svg" width="400" height="200" viewBox="0 0 400 200">
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-     <svg class="svg" width="200" height="100" viewBox="0 0 400 200">
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-     <svg class="svg" width="200" height="100" viewBox="150 50 400 200">
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-     <svg class="svg" width="400" height="200" viewBox="0 0 200 100">
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-     <svg class="svg" width="400" height="200" viewBox="0 0 4000 2000">
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
-     <svg class="svg" width="400" height="200" viewBox="0 0 400 1000" 
-     preserveAspectRatio="none">
-        <rect x="100" y="50" width="200" height="100"  fill="var(--cyclamen)"/>
-     </svg>
-   </section>
-   <section>
+    <section>
+      <hr />
+      <h3>Rectangle</h3>
+      <svg class="svg" width="400" height="200">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>What will happen if element will be longer than the canvas?</h3>
+      <svg class="svg" width="200" height="200">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>Example of view box</h3>
+      <svg class="svg" width="400" height="200" viewBox="0 0 400 200">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>When width and height of svg is smaller but element and viewbox stays the same</h3>
+      <svg class="svg" width="200" height="100" viewBox="0 0 400 200">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>
+      Changed values of viewBox
+      </h3>
+      <svg class="svg" width="200" height="100" viewBox="150 50 400 200">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>
+         Changed values of viewBox
+         </h3>
+      <svg class="svg" width="400" height="200" viewBox="0 0 200 100">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>
+         Changed values of viewBox
+         </h3>
+      <svg class="svg" width="400" height="200" viewBox="0 0 4000 2000">
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
+      <h3>Preserve Aspect Ratio</h3>
+      <p>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio"
+          target="_blank"
+          >preserveAspectRatio</a
+        >
+      </p>
+
+      <svg
+        class="svg"
+        width="400"
+        height="200"
+        viewBox="0 0 400 1000"
+        preserveAspectRatio="none"
+      >
+        <rect x="100" y="50" width="200" height="100" fill="var(--cyclamen)" />
+      </svg>
+    </section>
+    <section>
+      <hr />
       <h3>Example on how to import SVG element to your page</h3>
       <p>Remeber to use some optimalisation tool for SVGs!</p>
-     <img src="assets/images/appleOptimized.svg" alt="Apple" width="400" height="200" >
-   </section>
-</body>
+      <img
+        src="assets/graphics/appleNotOptimized.svg"
+        alt="Apple - not optimized"
+        width="400"
+        height="200"
+      />
+      <img
+        src="assets/graphics/appleOptimized.svg"
+        alt="Apple - optimized"
+        width="400"
+        height="200"
+      />
+    </section>
+    <section>
+      <hr />
+      <h3>SVGs and Keyframes</h3>
+      <iframe height="600" style="width: 100%;" scrolling="no" title="svg cat animation" src="https://codepen.io/AniWeyn/embed/poONKYB?default-tab=results" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+         See the Pen <a href="https://codepen.io/AniWeyn/pen/poONKYB">
+         svg cat animation</a> by Sabina (<a href="https://codepen.io/AniWeyn">@AniWeyn</a>)
+         on <a href="https://codepen.io">CodePen</a>.
+       </iframe>
+    </section>
+  </body>
+</html>
